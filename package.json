@@ -1,0 +1,14 @@
+{
+  "name": "mean_app",
+  "version": "1.0.0",
+  "description": "Create RESTFul API",
+  "main": "HelloWorld.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhibroto Mukherjee",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
