@@ -1,18 +1,15 @@
 var express = require ('express');
 var app = express();
-app.get('/cars', function(request, response){
-	response.send([{name:'Mercedes'}, {name:'Audi'}]);
-});
+var port = '3000'//process.env.PORT;
+var path = require('path');
 
-app.get('/cars/:id', function(req, res) {
-	if(req.params.id==1){
-		res.send({id:req.params.id, name: "BMW", description: "description"});
-	}
-	else{
-		res.send({id:req.params.id, name: "AlfaRomeo", description: "description"});
-	}
-    
-});
+app.set('view engine', 'ejs');
+app.set('views', path.resolve(__dirname,'client', 'views'));
+app.listen(process.env.PORT);
 
-app.listen(3000);
-console.log('Listening on port 3000...');
+app.get('/', function(req, res){
+	res.render('index.ejs');
+});
+app.listen(port, function(){
+console.log('Listening on port' +port);
+});

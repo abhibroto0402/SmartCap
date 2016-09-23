@@ -1,0 +1,19 @@
+{
+  "name": "PharmacyForm",
+  "description": "pharmaformsmartcap.com",
+  "main": "HelloWorld.js",
+  "authors": [
+    "<smart cap>"
+  ],
+  "license": "ISC",
+  "homepage": "pharmaformsmartcap.com",
+  "private": true,
+  "dependencies": {
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "angular-route": "^1.5.9"
+  },
+  "install" :{
+    "path":"client/libs"
+  }
+}
