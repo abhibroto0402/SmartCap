@@ -1,7 +1,7 @@
 {
   "name": "PharmacyForm",
   "description": "pharmaformsmartcap.com",
-  "main": "HelloWorld.js",
+  "main": "Server.js",
   "authors": [
     "<smart cap>"
   ],

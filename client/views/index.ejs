@@ -4,11 +4,11 @@
 <head>
     <h1>Pharmacy WebForm- SmartCap</h1>
     <link href="libs/bootstrap/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
 </head>
 
 <body>
-    <div class="form-style-5">
-       <form>
+    <form>
     <fieldset>
         <legend><span class="number">1</span> Candidate Info</legend>
         <input type="text" name="field1" placeholder="Your Name *">
@@ -40,9 +40,16 @@
         <legend><span class="number">2</span> Additional Info</legend>
         <textarea name="field3" placeholder="About Your School"></textarea>
     </fieldset>
-    <input type="submit" value="Apply" />
+    <button onclick= "submitForm()">
+        Apply
+    </button>
+    <p id="SubmitMessage"></p>
+    <script>
+        function submitForm(){
+            document.getElementById("SubmitMessage").innerHTML= "Form Submission Successful";
+        }
+    </script>
 </form>
-    </div>
     
     <script type="text/javascript" src="libs/angular/angular.js"></script>
     <script type="text/javascript" src="libs/angular-route/angular-route.js"></script>
