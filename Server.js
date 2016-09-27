@@ -9,14 +9,7 @@ app.get('/', function(req, res){
 	res.render('index.ejs');
 });
 
-/*app.use(express.logger());
-app.set("view options", {layout: false});
-app.use(express.static(__dirname + '/views'));
-
-app.get('/', function(req, res){
-    res.render('/views/home.html');
-});*/
-
+app.use(express.static(path.resolve(__dirname,'client')));
 
 app.listen(port, process.env.IP, function(){
 console.log("Server UP@ Port :" + port);
